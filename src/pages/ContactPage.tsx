@@ -116,7 +116,7 @@ const ContactPage = () => {
           {/* Contact Form */}
           <div className="md:w-2/3">
             <div className="rounded-lg bg-white p-8 shadow-md dark:bg-gray-900">
-              <form onSubmit={handleSubmit}>
+              <form onSubmit={handleSubmit} data-netlify="true">
                 <div className="mb-6">
                   <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
                     Name
