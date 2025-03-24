@@ -1,5 +1,4 @@
-import { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -9,59 +8,66 @@ const ContactPage = () => {
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState({ type: '', text: '' });
-  const formRef = useRef<HTMLFormElement>(null);
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    if (!formRef.current) return;
-
-    // Using EmailJS to send emails
-    // Replace with your actual EmailJS service ID, template ID, and public key
-    emailjs.sendForm(
-      'service_sq83kbb', // Replace with your EmailJS service ID
-      'template_k1uk37h', // Replace with your EmailJS template ID
-      formRef.current,
-      'trd1aqUhpVlKd_X_5' // Replace with your EmailJS public key
-    )
-      .then((result) => {
-        console.log('Email sent successfully:', result.text);
+    const form = e.currentTarget;
+    
+    try {
+      // Use the built-in form submission with Netlify's handling
+      const formData = new FormData(form);
+      
+      const response = await fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData as any).toString(),
+      });
+      
+      if (response.ok) {
+        // Success handling
         setIsSubmitting(false);
         setSubmitMessage({
           type: 'success',
           text: 'Thank you! Your message has been sent successfully.',
         });
-
+        
         // Reset form
         setFormData({
           name: '',
           email: '',
           message: '',
         });
-
+        
+        setFormSubmitted(true);
+        
         // Clear success message after 5 seconds
         setTimeout(() => {
           setSubmitMessage({ type: '', text: '' });
         }, 5000);
-      })
-      .catch((error) => {
-        console.error('Failed to send email:', error.text);
-        setIsSubmitting(false);
-        setSubmitMessage({
-          type: 'error',
-          text: 'Failed to send your message. Please try again later.',
-        });
-        
-        // Clear error message after 5 seconds
-        setTimeout(() => {
-          setSubmitMessage({ type: '', text: '' });
-        }, 5000);
+      } else {
+        throw new Error(`Form submission failed: ${response.statusText}`);
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      setIsSubmitting(false);
+      setSubmitMessage({
+        type: 'error',
+        text: 'Failed to send your message. Please try again later.',
       });
+      
+      // Clear error message after 5 seconds
+      setTimeout(() => {
+        setSubmitMessage({ type: '', text: '' });
+      }, 5000);
+    }
+  };
   };
 
   const contactInfo = [
@@ -139,6 +145,16 @@ const ContactPage = () => {
           {/* Contact Form */}
           <div className="md:w-2/3">
             <div className="rounded-lg bg-white p-8 shadow-md dark:bg-gray-900">
+              {formSubmitted && !submitMessage.text && (
+                <div className="mb-6 rounded-lg bg-green-100 p-4 text-green-800 dark:bg-green-800/20 dark:text-green-400">
+                  <div className="flex items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-5 w-5 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <p>Thank you for your message! We'll get back to you soon.</p>
+                  </div>
+                </div>
+              )}
               {submitMessage.text && (
                 <div 
                   className={`mb-6 rounded-lg p-4 ${
@@ -161,7 +177,23 @@ const ContactPage = () => {
                   </div>
                 </div>
               )}
-              <form ref={formRef} onSubmit={handleSubmit}>
+              <form 
+                name="contact" 
+                method="POST" 
+                data-netlify="true" 
+                netlify-honeypot="bot-field"
+                onSubmit={handleSubmit}
+              >
+                {/* Hidden input for netlify form name */}
+                <input type="hidden" name="form-name" value="contact" />
+                
+                {/* Honeypot field to prevent spam */}
+                <div className="hidden">
+                  <label>
+                    Don't fill this out if you're human: 
+                    <input name="bot-field" />
+                  </label>
+                </div>
                 <div className="mb-6">
                   <label htmlFor="name" className="mb-2 block text-sm font-medium text-gray-700 dark:text-gray-300">
                     Name
