@@ -11,7 +11,7 @@ const Projects = () => {
       id: 1,
       title: 'iChat',
       description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication. It supports voice and text input for effortless cross-language conversations.',
-      //image: 'https://images.unsplash.com/photo-1661956602944-249bcd04b63f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      image: 'https://i.imgur.com/m0rkgth.png',
       technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
       category: 'ios',
       demoLink: '#',
