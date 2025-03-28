@@ -21,7 +21,7 @@ const ProjectsPage = () => {
       id: 1,
       title: 'iChat',
       description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
-      image: 'ichatCover.png',
+      image: 'https://imgur.com/a/iCvZ8qu',
       technologies: ['Swift', 'UIKit', 'HealthKit', 'Core Data'],
       category: 'iOS',
     },
