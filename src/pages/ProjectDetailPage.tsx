@@ -277,10 +277,10 @@ const ProjectDetailPage = () => {
 const projectsData: ProjectDetail[] = [
   {
     id: 1,
-    title: "FitTracker Pro",
+    title: "iChat",
     category: "iOS",
-    description: "A comprehensive fitness tracking app for iOS with activity monitoring, workout plans, and nutrition tracking.",
-    overviewImage: "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    description: "An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.",
+    overviewImage: "https://i.imgur.com/m0rkgth.png",
     fullDescription: "FitTracker Pro is a comprehensive iOS fitness application designed to help users track their workouts, monitor nutrition, and achieve their fitness goals. The app provides personalized workout plans, detailed activity tracking, and nutritional guidance all in one seamless experience.",
     features: [
       "Personalized workout plans based on user goals",

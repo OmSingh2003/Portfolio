@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'ios', 'Web', 'Android'];
+  const categories = ['All', 'Ios', 'Web', 'Android'];
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Project data
@@ -10,7 +10,7 @@ const Projects = () => {
     {
       id: 1,
       title: 'iChat',
-      description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication. It supports voice and text input for effortless cross-language conversations.',
+      description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
       image: 'https://i.imgur.com/m0rkgth.png',
       technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
       category: 'ios',
@@ -20,7 +20,7 @@ const Projects = () => {
     {
       id: 2,
       title: 'AgroBharat',
-      description: 'AgroBharat is an AI-powered website that helps farmers optimize their farming practices with smart tools for crop monitoring, soil analysis, and yield prediction. It leverages advanced AI to boost productivity and sustainability.',
+      description: 'AgroBharat is an AI-powered website that helps farmers optimize their farming practices with smart tools for crop monitoring, soil analysis, and yield prediction.',
       image: 'https://i.imgur.com/nFJ8X40.png',
       technologies: ['Python', 'Jupyter Notebook', 'Flask'],
       category: 'Web',
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       id: 3,
       title: 'YatriOS',
-      description: 'YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources. It offers a clean UI, essential apps, and efficient resource management for a lag-free experience.',
+      description: 'YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources.',
       image: 'https://i.imgur.com/ICdtcsA.png',
       technologies: ['C#', 'VMWare'],
       category: 'OS',
