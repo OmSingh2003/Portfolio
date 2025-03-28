@@ -21,7 +21,14 @@ const FeaturedProjects = () => {
       technologies: ['Python', 'Jupyter Notebook', 'Flask'],
       category: 'Web',
     },
-    
+    {
+      id: 3,
+      title: 'YatriOS',
+      description: 'YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources.',
+      image: 'https://i.imgur.com/ICdtcsA.png',
+      technologies: ['C#', 'VMWare'],
+      category: 'All',
+      },
     {
       id: 5,
       title: 'FlappyBird',

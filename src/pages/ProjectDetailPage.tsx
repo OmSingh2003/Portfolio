@@ -364,6 +364,39 @@ const projectsData: ProjectDetail[] = [
     screenshots: []
   },
   {
+    id: 3,
+    title: "YatriOS",
+    category: "All",
+    description: "YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources.",
+    overviewImage: "https://i.imgur.com/ICdtcsA.png",
+    fullDescription: "YatriOS is a highly efficient operating system tailored for low-end hardware. It provides a smooth user experience with minimal resource consumption, making it ideal for older PCs and lightweight computing needs. The OS is designed to be fast, responsive, and easy to use.",
+    features: [
+      "Optimized for low-end hardware with minimal resource usage",
+      "Fast boot time and lightweight footprint",
+      "User-friendly interface with essential utilities",
+      "Supports basic multitasking and productivity applications",
+      "Enhanced security and stability"
+    ],
+    technologies: ["C#", "VMWare"],
+    challenges: "Ensuring smooth performance on low-end devices while maintaining a modern and usable interface.",
+    solutions: "We optimized system processes, reduced background tasks, and fine-tuned memory management to ensure a responsive user experience.",
+    results: "YatriOS has been well-received by users looking for an alternative lightweight OS. It has helped revive older PCs by providing a smooth and efficient computing experience.",
+    // screenshots: [
+    //   {
+    //     image: "https://i.imgur.com/example1.png",
+    //     caption: "Desktop Interface - Minimalist and lightweight UI"
+    //   },
+    //   {
+    //     image: "https://i.imgur.com/example2.png",
+    //     caption: "Task Manager - Efficient resource management"
+    //   }
+    // ],
+    githubLink: "https://github.com/OmSingh2003/YatriOS",
+    // websiteLink: "https://example.com"
+    screenshots: []
+}
+,
+  {
     id: 5,
     title: "FlappyBird",
     category: "iOS",
