@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Web', 'Mobile', 'UI/UX'];
+  const categories = ['All', 'ios', 'Web', 'Android'];
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Project data
@@ -21,7 +21,7 @@ const Projects = () => {
       id: 2,
       title: 'AgroBharat',
       description: 'AgroBharat is an AI-powered website that helps farmers optimize their farming practices with smart tools for crop monitoring, soil analysis, and yield prediction. It leverages advanced AI to boost productivity and sustainability.',
-      image: 'https://images.unsplash.com/photo-1517292987719-0369a794ec0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
+      image: 'https://i.imgur.com/nFJ8X40.png',
       technologies: ['Python', 'Jupyter Notebook', 'Flask'],
       category: 'Web',
       demoLink: '#',
@@ -31,42 +31,42 @@ const Projects = () => {
       id: 3,
       title: 'YatriOS',
       description: 'YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources. It offers a clean UI, essential apps, and efficient resource management for a lag-free experience.',
-      image: 'https://images.unsplash.com/photo-1581172983521-5de20c87abcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      image: 'https://i.imgur.com/ICdtcsA.png',
       technologies: ['C#', 'VMWare'],
       category: 'OS',
       demoLink: '#',
       codeLink: 'https://github.com/OmSingh2003/YatriOS',
     },
-    {
-      id: 4,
-      title: 'SpaceWars',
-      description: 'SpaceWars is an action-packed 2D space shooter game built with C# and Unity, featuring intense battles, power-ups, and dynamic enemy AI. Players navigate through space, dodging asteroids and defeating enemies to conquer the galaxy.',
-      image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['C#', 'Unity'],
-      category: 'PC Game',
-      demoLink: '#',
-      codeLink: '#',
-    },
+    // {
+    //   id: 4,
+    //   title: 'SpaceWars',
+    //   description: 'SpaceWars is an action-packed 2D space shooter game built with C# and Unity, featuring intense battles, power-ups, and dynamic enemy AI. Players navigate through space, dodging asteroids and defeating enemies to conquer the galaxy.',
+    //   image: '',
+    //   technologies: ['C#', 'Unity'],
+    //   category: 'PC Game',
+    //   demoLink: '#',
+    //   codeLink: '#',
+    // },
     {
       id: 5,
-      title: 'AI-PowerEngineed Smart Search ',
-      description: 'AI-PowerEngineered Smart Search is an advanced AI-driven search engine that delivers highly relevant and context-aware results. It leverages machine learning and NLP to understand queries better and enhance user experience.',
-      image: 'https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Swift', 'Kotlin', 'Flutter', 'Google cloud APIs'],
-      category: 'Android and IOS',
+      title: 'FlappyBird',
+      description: 'A simple yet challenging side-scrolling game where you guide a bird through obstacles.',
+      image: 'https://i.imgur.com/iowFTnd.png',
+      technologies: ['Swift'],
+      category: 'IOS',
       demoLink: '#',
-      codeLink: '#',
+      codeLink: 'https://github.com/OmSingh2003/flappybird/tree/main',
     },
-    {
-      id: 6,
-      title: 'AI-Enhanced Code Autocompletion and Debugging App',
-      description: 'An AI-enhanced code autocompletion and debugging app that boosts developer productivity with intelligent suggestions and real-time error detection.',
-      image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Python', 'OpenAI API', 'LLM'],
-      category: 'Android and IOS',
-      demoLink: '#',
-      codeLink: '#',
-    },
+    // {
+    //   id: 6,
+    //   title: 'AI-Enhanced Code Autocompletion and Debugging App',
+    //   description: 'An AI-enhanced code autocompletion and debugging app that boosts developer productivity with intelligent suggestions and real-time error detection.',
+    //   image: 'https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    //   technologies: ['Python', 'OpenAI API', 'LLM'],
+    //   category: 'Android and IOS',
+    //   demoLink: '#',
+    //   codeLink: '#',
+    // },
   ];
 
   // Filter projects based on active category
