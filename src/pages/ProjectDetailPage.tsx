@@ -281,129 +281,123 @@ const projectsData: ProjectDetail[] = [
     category: "iOS",
     description: "An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.",
     overviewImage: "https://i.imgur.com/m0rkgth.png",
-    fullDescription: "FitTracker Pro is a comprehensive iOS fitness application designed to help users track their workouts, monitor nutrition, and achieve their fitness goals. The app provides personalized workout plans, detailed activity tracking, and nutritional guidance all in one seamless experience.",
+    fullDescription: "iChat is a cutting-edge iOS chat application designed to bridge language barriers by providing real-time translation during conversations. It integrates Google Translate API for accurate multilingual communication, ensuring users can connect effortlessly across the globe. The app also features voice-to-text translation, customizable language preferences, and end-to-end encryption for secure messaging.",
     features: [
-      "Personalized workout plans based on user goals",
-      "Real-time activity tracking with Apple HealthKit integration",
-      "Detailed nutrition tracking and meal planning",
-      "Progress visualization with interactive charts",
-      "Social features for connecting with friends and sharing achievements",
-      "Apple Watch companion app for on-the-go tracking"
+      "Real-time translation of messages using Google Translate API",
+      "Automatic language detection for seamless communication",
+      "Voice-to-text and text-to-speech translation support",
+      "Multi-language support for over 100 languages",
+      "Customizable translation preferences and tone selection",
+      "End-to-end encryption for secure messaging",
+      "Push notifications for instant chat updates",
+      "Cloud-based chat history syncing across devices"
     ],
     technologies: [
-      "Swift", "UIKit", "SwiftUI", "Core Data", "HealthKit", "CloudKit", "CoreML"
+      "Swift", "SwiftUI", "UIKit", "Vapor", "Cloud Translation API", "Firebase Cloud Messaging", "Core Data", "CloudKit"
     ],
-    challenges: "One of the main challenges was integrating with HealthKit while ensuring data privacy and reliable synchronization across devices. We also needed to optimize battery usage while maintaining accurate tracking for extended workout sessions.",
-    solutions: "We implemented a sophisticated data synchronization system using CloudKit to ensure seamless updates across devices. For battery optimization, we used intelligent background processing and adaptive sampling rates based on activity intensity.",
-    results: "The app has achieved over 100,000 downloads in the App Store with a 4.8-star rating. Users report an average of 30% better adherence to their fitness routines and improved satisfaction with their progress tracking.",
-    screenshots: [
-      {
-        image: "https://images.unsplash.com/photo-1575310866542-71d0593e22e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Dashboard View - User can see daily progress at a glance"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1604764454781-288c8a7a8f8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Workout Tracking - Real-time stats during exercises"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1591311630200-ffa9120a540f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Nutrition Tracker - Easy meal logging with calorie breakdown"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1601678979565-6af453c2f588?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Progress Charts - Visual representation of fitness journey"
-      }
-    ],
-    appStoreLink: "https://apps.apple.com",
-    githubLink: "https://github.com"
+    challenges: "Ensuring real-time message translation while maintaining fast response times and securing user data was a key challenge. Additionally, optimizing API requests to reduce latency and handling diverse language structures required careful implementation.",
+    solutions: "To minimize translation delays, we optimized API requests with caching mechanisms and efficient data processing. Secure encryption protocols were integrated to protect user privacy. The app uses Vapor for a high-performance backend, ensuring a smooth and reliable chat experience.",
+    results: "iChat has been well-received by early adopters, significantly improving cross-language communication efficiency. Users report enhanced messaging experiences, accurate translations, and improved engagement with international contacts.",
+    // screenshots: [
+    //   {
+    //     image: "https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    //     caption: "Seamless Chat - Real-time translations within the conversation"
+    //   },
+    //   {
+    //     image: "https://images.unsplash.com/photo-1601132359868-2a85b551ab4d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    //     caption: "Voice Translation - Speak messages and get instant translations"
+    //   },
+    //   {
+    //     image: "https://images.unsplash.com/photo-1593642532454-e1a60f44a86b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    //     caption: "Multi-Language Support - Chat in over 100 languages"
+    //   },
+    //   {
+    //     image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+    //     caption: "Secure Messaging - End-to-end encryption for privacy"
+    //   }
+    // ],
+    //appStoreLink: "https://apps.apple.com",
+    githubLink: "https://github.com/OmSingh2003/iChat",
+    screenshots: []
   },
   {
     id: 2,
-    title: "MediRemind",
-    category: "Android",
-    description: "A medication reminder and health management app for Android users with customizable notifications and dosage tracking.",
-    overviewImage: "https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    fullDescription: "MediRemind is an Android application designed to help users manage their medications, schedule appointments, and track health metrics. The app focuses on improving medication adherence through smart reminders and simplified tracking, while also providing comprehensive health management tools.",
+    title: "AgroBharat",
+    category: "Web",
+    description: "An AI-powered Android application designed to assist farmers with smart tools for crop monitoring, soil analysis, and yield prediction.",
+    overviewImage: "https://i.imgur.com/nFJ8X40.png",
+    fullDescription: "AgroBharat is a powerful Android application that leverages AI and data analytics to help farmers optimize their agricultural practices. The app provides real-time insights on crop health, weather forecasts, and soil conditions to enhance productivity. With intelligent recommendations and predictive analytics, AgroBharat empowers farmers to make data-driven decisions for better yield and resource management.",
     features: [
-      "Intelligent medication reminders with custom scheduling",
-      "Medication inventory tracking with refill alerts",
-      "Doctor appointment scheduling and reminders",
-      "Symptom and side effect tracking",
-      "Family sharing for caregivers",
-      "Export medical data for healthcare providers"
+     "AI-driven crop health monitoring and disease detection",
+      "Real-time weather forecasting and climate impact analysis",
+      "Soil quality assessment with recommendations for fertilizers",
+      "Smart irrigation management for efficient water usage",
+      "Market price tracking for better selling decisions",
+      "Government scheme updates and agricultural news feed"
     ],
     technologies: [
-      "Kotlin", "Jetpack Compose", "MVVM Architecture", "Room Database", "WorkManager", "Hilt Dependency Injection"
+      "Python","Jupyter Notebook","Flask"
     ],
-    challenges: "The biggest challenge was creating a reliable notification system that would work across different Android versions and manufacturers' custom OS modifications. Additionally, we needed to implement a secure system for storing sensitive health information.",
-    solutions: "We developed a robust notification system using Android's WorkManager API with fallback mechanisms. For data security, we implemented encryption and followed HIPAA-inspired guidelines for protecting user health information.",
-    results: "The app has over 50,000 installs on Google Play with a 4.6-star rating. Users report a 40% improvement in medication adherence, and the app has been recommended by healthcare professionals for patient use.",
-    screenshots: [
-      {
-        image: "https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Medication Dashboard - Overview of daily medication schedule"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Add Medication - Simple form for adding new medications"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Reminder Notification - Clear alerts for medication times"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Health Metrics - Tracking vital signs and health data"
-      }
-    ],
-    playStoreLink: "https://play.google.com",
-    githubLink: "https://github.com"
+    challenges: "The main challenge was integrating real-time weather and soil data while ensuring the AI models provide accurate predictions for different regions. Additionally, delivering AI-powered recommendations in an offline mode for remote areas was a key focus.",
+    solutions: "We implemented a hybrid approach using TensorFlow Lite for offline AI processing while synchronizing with Firebase for cloud-based updates. Weather and soil data were optimized using efficient API requests, and a caching system was introduced to ensure accessibility in low-connectivity areas.",
+    results: "AgroBharat has been adopted by thousands of farmers, leading to an increase in crop yield efficiency. User feedback highlights improved decision-making, better resource management, and enhanced profitability through AI-driven insights.",
+    //screenshots: [
+     // {
+       // image: "https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        //caption: "Medication Dashboard - Overview of daily medication schedule"
+     // },
+     // {
+       // image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        //caption: "Add Medication - Simple form for adding new medications"
+   //   },
+    //  {
+      //  image: "https://images.unsplash.com/photo-1551190822-a9333d879b1f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+       // caption: "Reminder Notification - Clear alerts for medication times"
+     // },
+     // {
+       // image: "https://images.unsplash.com/photo-1579208570378-8c970854bc23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+       // caption: "Health Metrics - Tracking vital signs and health data"
+      //}
+   // ]
+    //playStoreLink: "https://play.google.com",
+    githubLink: "https://github.com",
+    screenshots: []
   },
   {
-    id: 3,
-    title: "SecureChat",
-    category: "Full Stack",
-    description: "End-to-end encrypted messaging app available for both iOS and Android with focus on privacy and security.",
-    overviewImage: "https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80",
-    fullDescription: "SecureChat is a cross-platform messaging application built with React Native that provides end-to-end encryption for all communications. The app prioritizes user privacy and security while delivering a smooth, intuitive messaging experience with features comparable to mainstream messaging apps.",
+    id: 5,
+    title: "FlappyBird",
+    category: "iOS",
+    description: "A simple yet challenging side-scrolling game where you guide a bird through obstacles.",
+    overviewImage: "https://i.imgur.com/iowFTnd.png",
+    fullDescription: "FlappyBird is a classic endless runner game built for iOS, where players tap to keep the bird airborne and navigate through a series of obstacles. The game tests players' reflexes and precision while maintaining a fun and engaging experience.",
     features: [
-      "End-to-end encryption for all messages and calls",
-      "Self-destructing messages with customizable timers",
-      "Secure group chats with advanced permissions",
-      "Encrypted voice and video calls",
-      "Two-factor authentication",
-      "Local encryption of message database",
-      "No-logs policy - minimal data storage on servers"
+      "Tap-based controls for easy gameplay",
+      "Randomly generated obstacles for infinite replayability",
+      "Pixel-art style graphics for a nostalgic feel",
+      "High-score tracking and leaderboard integration",
+      "Smooth physics-based movement"
     ],
-    technologies: [
-      "React Native", "TypeScript", "Firebase", "WebRTC", "Signal Protocol", "Redux", "Node.js"
-    ],
-    challenges: "Implementing true end-to-end encryption across platforms while maintaining performance was challenging. Additionally, balancing security features with user experience required careful design considerations.",
-    solutions: "We used the Signal Protocol for encryption, implemented as a native module for optimal performance. The UX was carefully crafted through multiple rounds of user testing to ensure security features were intuitive and didn't hinder the messaging experience.",
-    results: "The app has been adopted by privacy-conscious users and organizations, with over 200,000 combined downloads. It has received recognition from security experts and privacy advocates for its implementation of encryption standards.",
-    screenshots: [
-      {
-        image: "https://images.unsplash.com/photo-1563674847932-52d3d2a0a058?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Chat Interface - Clean messaging UI with encryption indicators"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1611746869696-d09bce200020?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Security Settings - Advanced encryption configuration options"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1590674899484-d5a66121c3f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Video Call - Encrypted video communication"
-      },
-      {
-        image: "https://images.unsplash.com/photo-1604004215402-e0be233f39be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        caption: "Group Chat - Secure multi-person conversations"
-      }
-    ],
+    technologies: ["Swift", "SpriteKit"],
+    challenges: "Optimizing collision detection and physics interactions while maintaining smooth gameplay.",
+    solutions: "We fine-tuned the physics engine and optimized asset rendering to ensure a lag-free experience, even on older devices.",
+    results: "FlappyBird has received positive feedback for its addictive gameplay and fluid mechanics. Players enjoy the challenging yet rewarding nature of the game.",
+    // screenshots: [
+    //   {
+    //     image: "https://i.imgur.com/example1.png",
+    //     caption: "Gameplay - Guide the bird through obstacles"
+    //   },
+    //   {
+    //     image: "https://i.imgur.com/example2.png",
+    //     caption: "Game Over - Retry and beat your high score"
+    //   }
+    // ],
     appStoreLink: "https://apps.apple.com",
-    playStoreLink: "https://play.google.com",
-    githubLink: "https://github.com",
-    websiteLink: "https://example.com"
-  }
+    githubLink: "https://github.com/OmSingh2003/flappybird",
+    // websiteLink: "https://example.com"
+    screenshots:[]
+  },
+  
+  
 ];
 
 export default ProjectDetailPage;

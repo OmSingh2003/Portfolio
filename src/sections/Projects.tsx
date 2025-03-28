@@ -14,7 +14,7 @@ const Projects = () => {
       image: 'https://i.imgur.com/m0rkgth.png',
       technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
       category: 'ios',
-      demoLink: '#',
+      //demoLink: '#',
       codeLink: 'https://github.com/OmSingh2003/iChat',
     },
     {
@@ -24,7 +24,7 @@ const Projects = () => {
       image: 'https://i.imgur.com/nFJ8X40.png',
       technologies: ['Python', 'Jupyter Notebook', 'Flask'],
       category: 'Web',
-      demoLink: '#',
+      //demoLink: '#',
       codeLink: 'https://github.com/OmSingh2003/AgroBharat',
     },
     {
@@ -34,7 +34,7 @@ const Projects = () => {
       image: 'https://i.imgur.com/ICdtcsA.png',
       technologies: ['C#', 'VMWare'],
       category: 'OS',
-      demoLink: '#',
+      //demoLink: '#',
       codeLink: 'https://github.com/OmSingh2003/YatriOS',
     },
     // {
@@ -52,9 +52,9 @@ const Projects = () => {
       title: 'FlappyBird',
       description: 'A simple yet challenging side-scrolling game where you guide a bird through obstacles.',
       image: 'https://i.imgur.com/iowFTnd.png',
-      technologies: ['Swift'],
+      technologies: ['Swift','SprikeKit'],
       category: 'IOS',
-      demoLink: '#',
+      demoLink: 'https://github.com/OmSingh2003/flappybird/tree/main',
       codeLink: 'https://github.com/OmSingh2003/flappybird/tree/main',
     },
     // {
