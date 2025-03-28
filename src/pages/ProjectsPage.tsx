@@ -19,9 +19,9 @@ const ProjectsPage = () => {
   const allProjects: Project[] = [
     {
       id: 1,
-      title: 'FitTracker Pro',
-      description: 'A comprehensive fitness tracking app for iOS with activity monitoring, workout plans, and nutrition tracking.',
-      image: 'https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+      title: 'iChat',
+      description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
+      image: 'ichatCover.png',
       technologies: ['Swift', 'UIKit', 'HealthKit', 'Core Data'],
       category: 'iOS',
     },
