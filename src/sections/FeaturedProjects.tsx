@@ -6,28 +6,31 @@ const FeaturedProjects = () => {
   const featuredProjects = [
     {
       id: 1,
-      title: 'FitTracker Pro',
-      description: 'A comprehensive fitness tracking app for iOS with activity monitoring, workout plans, and nutrition tracking.',
-      image: 'https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Swift', 'UIKit', 'HealthKit', 'Core Data'],
-      category: 'iOS',
+      title: 'iChat',
+      description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
+      image: 'https://i.imgur.com/m0rkgth.png',
+      technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
+      category: 'ios',
     },
+    
     {
       id: 2,
-      title: 'MediRemind',
-      description: 'A medication reminder and health management app for Android users with customizable notifications and dosage tracking.',
-      image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Kotlin', 'Jetpack Compose', 'Room Database', 'WorkManager'],
-      category: 'Android',
+      title: 'AgroBharat',
+      description: 'AgroBharat is an AI-powered website that helps farmers optimize their farming practices with smart tools for crop monitoring, soil analysis, and yield prediction.',
+      image: 'https://i.imgur.com/nFJ8X40.png',
+      technologies: ['Python', 'Jupyter Notebook', 'Flask'],
+      category: 'Web',
     },
+    
     {
-      id: 3,
-      title: 'SecureChat',
-      description: 'End-to-end encrypted messaging app available for both iOS and Android with focus on privacy and security.',
-      image: 'https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Encryption Algorithms'],
-      category: 'Full Stack',
+      id: 5,
+      title: 'FlappyBird',
+      description: 'A simple yet challenging side-scrolling game where you guide a bird through obstacles.',
+      image: 'https://i.imgur.com/iowFTnd.png',
+      technologies: ['Swift','SprikeKit'],
+      category: 'IOS',
     }
+    
   ];
 
   return (

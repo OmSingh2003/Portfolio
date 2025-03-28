@@ -7,7 +7,7 @@ interface Project {
   description: string;
   image: string;
   technologies: string[];
-  category: 'iOS' | 'Android' | 'Full Stack';
+  category: 'All'|'iOS' | 'Android' | 'Web';
 }
 
 const ProjectsPage = () => {
@@ -17,54 +17,58 @@ const ProjectsPage = () => {
 
   // Projects data
   const allProjects: Project[] = [
+
     {
       id: 1,
       title: 'iChat',
       description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
       image: 'https://i.imgur.com/m0rkgth.png',
-      technologies: ['Swift', 'UIKit', 'HealthKit', 'Core Data'],
+      technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
       category: 'iOS',
     },
+    
     {
       id: 2,
-      title: 'MediRemind',
-      description: 'A medication reminder and health management app for Android users with customizable notifications and dosage tracking.',
-      image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Kotlin', 'Jetpack Compose', 'Room Database', 'WorkManager'],
-      category: 'Android',
+      title: 'AgroBharat',
+      description: 'AgroBharat is an AI-powered website that helps farmers optimize their farming practices with smart tools for crop monitoring, soil analysis, and yield prediction.',
+      image: 'https://i.imgur.com/nFJ8X40.png',
+      technologies: ['Python', 'Jupyter Notebook', 'Flask'],
+      category: 'Web',
     },
     {
-      id: 3,
-      title: 'SecureChat',
-      description: 'End-to-end encrypted messaging app available for both iOS and Android with focus on privacy and security.',
-      image: 'https://images.unsplash.com/photo-1622556498246-755f44ca76f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
-      technologies: ['React Native', 'Firebase', 'Redux', 'Encryption Algorithms'],
-      category: 'Full Stack',
+    id: 3,
+    title: 'YatriOS',
+    description: 'YatriOS is a lightweight and optimized operating system designed for low-end PCs, ensuring smooth performance with minimal resources.',
+    image: 'https://i.imgur.com/ICdtcsA.png',
+    technologies: ['C#', 'VMWare'],
+    category: 'All',
     },
-    {
-      id: 4,
-      title: 'WeatherNow',
-      description: 'A beautiful weather app for iOS with interactive animations, accurate forecasts, and location-based alerts.',
-      image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Swift', 'SwiftUI', 'MapKit', 'Weather API'],
-      category: 'iOS',
-    },
+  
     {
       id: 5,
-      title: 'EcoTracker',
-      description: 'Android app that helps users track and reduce their carbon footprint through daily habit suggestions and statistics.',
-      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
-      technologies: ['Kotlin', 'Material Design', 'Maps SDK', 'Firebase Analytics'],
-      category: 'Android',
-    },
-    {
-      id: 6,
-      title: 'TravelCompanion',
-      description: 'A cross-platform travel app with itinerary planning, offline maps, and local recommendations.',
-      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-      technologies: ['Flutter', 'Dart', 'Google Maps API', 'Firebase'],
-      category: 'Full Stack',
-    },
+      title: 'FlappyBird',
+      description: 'A simple yet challenging side-scrolling game where you guide a bird through obstacles.',
+      image: 'https://i.imgur.com/iowFTnd.png',
+      technologies: ['Swift','SprikeKit'],
+      category: 'iOS',
+    }
+    
+    // {
+    //   id: 5,
+    //   title: 'EcoTracker',
+    //   description: 'Android app that helps users track and reduce their carbon footprint through daily habit suggestions and statistics.',
+    //   image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80',
+    //   technologies: ['Kotlin', 'Material Design', 'Maps SDK', 'Firebase Analytics'],
+    //   category: 'Android',
+    // },
+    // {
+    //   id: 6,
+    //   title: 'TravelCompanion',
+    //   description: 'A cross-platform travel app with itinerary planning, offline maps, and local recommendations.',
+    //   image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
+    //   technologies: ['Flutter', 'Dart', 'Google Maps API', 'Firebase'],
+    //   category: 'Full Stack',
+    // },
   ];
 
   // Filter projects based on active category
