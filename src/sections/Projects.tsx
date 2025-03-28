@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Projects = () => {
   // Filter categories
-  const categories = ['All', 'Ios', 'Web', 'Android'];
+  const categories = ['All', 'iOS', 'Web', 'Android'];
   const [activeCategory, setActiveCategory] = useState('All');
 
   // Project data
@@ -13,7 +13,7 @@ const Projects = () => {
       description: 'An AI-powered iOS chat app that translates messages in real-time using Google Translate API, enabling seamless multilingual communication.',
       image: 'https://i.imgur.com/m0rkgth.png',
       technologies: ['Swift', 'Vapor', 'Cloud Translation API', 'Firebase Cloud Messaging'],
-      category: 'ios',
+      category: 'iOS',
       //demoLink: '#',
       codeLink: 'https://github.com/OmSingh2003/iChat',
     },
@@ -53,7 +53,7 @@ const Projects = () => {
       description: 'A simple yet challenging side-scrolling game where you guide a bird through obstacles.',
       image: 'https://i.imgur.com/iowFTnd.png',
       technologies: ['Swift','SprikeKit'],
-      category: 'IOS',
+      category: 'iOS',
       demoLink: 'https://github.com/OmSingh2003/flappybird/tree/main',
       codeLink: 'https://github.com/OmSingh2003/flappybird/tree/main',
     },
