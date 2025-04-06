@@ -16,3 +16,4 @@ Deployment: Netlify
 ✅ Contact Section – A contact form for reaching out to me.
 ✅ Responsive Design – Fully optimized for all devices.
 ✅ Dark Mode Support – Seamless light/dark mode switching.
+
