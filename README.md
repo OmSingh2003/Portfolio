@@ -1,4 +1,4 @@
-# [Your Name]'s Personal Portfolio Website
+# My Personal Portfolio Website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_NETLIFY_BADGE_ID/deploy-status)](https://app.netlify.com/sites/singhom/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) Welcome to the repository for my personal portfolio website! This site serves as a central hub to showcase my skills, projects, and journey in software development. Built with modern web technologies, it's designed to be fast, responsive, and visually appealing.
 
